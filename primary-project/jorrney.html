@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Journey to IIT Madras</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0b0c10;
+      font-family: 'Segoe UI', sans-serif;
+      color: #f8f9fa;
+    }
+    .timeline {
+      position: relative;
+      padding: 4rem 0;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      width: 4px;
+      background: linear-gradient(to bottom, gold, crimson);
+      top: 0;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+    .timeline-step {
+      position: relative;
+      width: 50%;
+      padding: 2rem;
+    }
+    .timeline-step.left {
+      left: 0;
+      text-align: right;
+    }
+    .timeline-step.right {
+      left: 50%;
+      text-align: left;
+    }
+    .timeline-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid crimson;
+      border-radius: 12px;
+      padding: 1.5rem;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 10px crimson;
+      transition: transform 0.3s;
+    }
+    .timeline-box:hover {
+      transform: scale(1.03);
+    }
+    .timeline-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: gold;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      z-index: 2;
+    }
+    .timeline-step.left .timeline-icon {
+      right: -25px;
+    }
+    .timeline-step.right .timeline-icon {
+      left: -25px;
+    }
+    @media screen and (max-width: 768px) {
+      .timeline::before {
+        left: 8px;
+      }
+      .timeline-step {
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 1rem;
+      }
+      .timeline-step.left,
+      .timeline-step.right {
+        left: 0;
+        text-align: left;
+      }
+      .timeline-step .timeline-icon {
+        left: -12px;
+        right: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container text-center mt-5">
+    <h1 class="text-warning fw-bold mb-3">🚀 My Journey</h1>
+    <p class="text-secondary">From Birth till now!</p>
+  </div>
+
+  <div class="container timeline">
+
+    <div class="timeline-step left">
+      <div class="timeline-icon"><i class="fas fa-baby"></i></div>
+      <div class="timeline-box">
+        <h5 class="text-warning">2005</h5>
+        <p>Born — the journey begins like any origin story.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step right">
+      <div class="timeline-icon"><i class="fas fa-school"></i></div>
+      <div class="timeline-box">
+        <h5 class="text-warning">2009 - 2011</h5>
+        <p>Early schooling at DAV Public School — discipline & curiosity took root.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step left">
+      <div class="timeline-icon"><i class="fas fa-trophy"></i></div>
+      <div class="timeline-box">
+        <h5 class="text-warning">2017 - 2019</h5>
+        <p>National-level handball 🏆, chess ♟️ — strength + strategy combo.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step right">
+      <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+      <div class="timeline-box">
+        <h5 class="text-warning">2020</h5>
+        <p>Discovered coding through Python. My arc reactor moment 💡.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step left">
+      <div class="timeline-icon"><i class="fas fa-chart-line"></i></div>
+      <div class="timeline-box">
+        <h5 class="text-warning">2021</h5>
+        <p>10th boards - 79%. Started mini projects, explored basic AI ideas.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step right">
+      <div class="timeline-icon"><i class="fas fa-bolt"></i></div>
+      <div class="timeline-box">
+        <h5 class="text-warning">2023</h5>
+        <p>12th boards - 78%. Dropped a year to chase IIT with full focus 💪.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step left">
+      <div class="timeline-icon"><i class="fas fa-user-graduate"></i></div>
+      <div class="timeline-box">
+        <h5 class="text-warning">2024</h5>
+        <p>Cleared the IIT Madras B.Sc. entrance exam. </p>
+        <p>IIT Madras conducts the entrance exam three times a year — in January, May, and September — for direct admission into the B.S. in Data Science and B.S. in Electronic Systems programs.</p>
+        <p>The exam is conducted at TCS iON centers across India, and the registration fee is ₹3000.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step right">
+      <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
+      <div class="timeline-box">
+        <h5 class="text-warning">2025 →</h5>
+        <p>Now at <strong>IIT Madras</strong> for chaising my dreams.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

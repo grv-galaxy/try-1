@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me </title>
+    <link rel="icon" href="../static/images/pic-5.png" type="image/png">
+    <!-- Bootstrap CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+     <!-- Custom Styles -->
+ <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* No scrollbars */
+      height: 100%;
+    }
+
+    body {
+      background-image: url('../static/images/pic-6.jpg');  /* ✅ Use new image here */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: sans-serif;
+    }
+
+    /* ✅ Transparent navbar with glassmorphism */
+    nav.navbar {
+      background-color: rgba(255, 255, 255, 0.1); /* translucent white */
+      backdrop-filter: blur(12px); /* glass blur effect */
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .text-custom-blue {
+      color: #ffffff !important; /* white for contrast */
+    }
+
+    .btn-custom-blue {
+      background-color: rgba(255, 255, 255, 0.2) !important;
+      color: white !important;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .btn-custom-blue:hover {
+      background-color: rgba(255, 255, 255, 0.4) !important;
+      color: black !important;
+    }
+
+    .navbar-toggler .navbar-toggler-icon {
+      display: none;
+    }
+
+    .custom-chevron {
+      font-size: 2rem;
+      color: #ffffff;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    .navbar-toggler {
+      border: none;
+      background: rgba(255, 255, 255, 0.3) !important;
+      border-radius: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .offcanvas {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .offcanvas-header {
+      background-color: rgba(255, 255, 255, 0.1)
+    }
+    .dropdown-menu {
+      background-color: rgba(255, 255, 255, 0.1); /* translucent white */
+      backdrop-filter: blur(12px);               /* glass effect */
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2); /* soft border */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .dropdown-item:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+
+    </style>
+  </head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg text-white my-4 mx-auto px-4 py-2 shadow" style="max-width: 95%;">
+    <div class="container-fluid">
+
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center text-custom-blue" href="index.html">
+        <img src="../static/images/pic-5.png" alt="Logo" width="32" height="32" class="me-2">
+        <strong>Gaurav </strong>
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+        <span class="custom-chevron" aria-hidden="true">&laquo;</span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navbarNav">
+        <ul class="navbar-nav gap-3 fs-5">
+          <li class="nav-item">
+            <a class="nav-link text-custom-blue" href="me.html">About Me 👨 </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custom-blue" href="jorrney.html">My Journey 🚀 </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Inside IIT-M 🏛️
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-white" href="life.html">Campus Life 😍 </a></li>
+              <li><a class="dropdown-item text-white" href="blog.html">Blogs</a></li>
+              <li><a class="dropdown-item text-white" href="gallery.html">Gallery 📸 </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-custom-blue" href="contact.html">Contact Me</a>
+          </li>
+      </div>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Add this after the navbar in your current me.html -->
+<section class="container py-5 text-white">
+  <div class="row align-items-center">
+    <!-- Profile Info -->
+    <div class="col-md-6">
+      <h1 class="fw-bold">I Am Gaurav</h1>
+      <h3 class="text-info">Aspiring Data Engineer & Developer</h3>
+      <p class="lead">Currently pursuing BS at IIT Madras. I'm passionate about technology, especially web development, and draw inspiration from the futuristic world of Iron Man — innovation, intelligence, and impact.</p>
+      <a href="maintainance.html" class="btn btn-warning rounded-pill px-4 py-2 mt-3">Know More</a>
+    </div>
+  </div>
+</section>
+
+<!-- Skills/Attributes Cards -->
+<section class="container py-4">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="p-4 border border-warning rounded-4 bg-dark bg-opacity-50">
+        <h4 class="text-warning">🔧 Skills</h4>
+        <p class="text-light">Python, Flask, HTML/CSS, Bootstrap, JavaScript, Git, SQL</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-4 border border-warning rounded-4 bg-dark bg-opacity-50">
+        <h4 class="text-warning">🎓 Education</h4>
+        <p class="text-light">IIT Madras, BS (2023-2027)<br>Exploring cutting-edge tech and real-world impact.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-4 border border-warning rounded-4 bg-dark bg-opacity-50">
+        <h4 class="text-warning">🔎 Vision</h4>
+        <p class="text-light">To become a tech leader like Tony Stark who builds to uplift lives, not just impress.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  -<!-- Offcanvas Mobile Menu -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between" style="height: 100%;">
+      <ul class="navbar-nav gap-3 fs-4">
+        <li class="nav-item"><a class="nav-link text-custom-blue" href="me.html">About Me 👨</a></li>
+        <li class="nav-item"><a class="nav-link text-custom-blue" href="jorrney.html">My Journey 🚀</a></li>
+        <li class="nav-item"><a class="nav-link text-custom-blue" href="life.html">Campus Life 😍</a></li>
+        <li class="nav-item"><a class="nav-link text-custom-blue" href="blog.html">Blogs</a></li>
+        <li class="nav-item"><a class="nav-link text-custom-blue" href="gallery.html">Gallery 📸 </a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
